@@ -1,0 +1,101 @@
+body {
+    margin :0px;
+}
+
+.over-wrap {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+}
+
+.left-contents {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #e3dccb;
+}
+
+.page-title {
+    height: 90px;
+    margin: 20px 20px;
+    background-color: #fec463;
+    border: solid 2px #333333;
+}
+
+.history-lists {
+    width: 90%;
+    margin-top: 20px;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.history-lists li {
+    height: 25%;
+    list-style: none;
+    padding-left: 25px;
+    border-left: solid 2px #333333;
+}
+
+.right-contents {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f2f0e9;
+}
+
+.name {
+    height: 90px;
+    margin: 20px 20px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.icon-container {
+    height: 200px;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.icon {
+    width: 200px;
+    height:200px;
+    left: 50%;
+    right: 50%;
+    border-radius: 50%;
+}
+
+.profile-board {
+    text-align: center;
+    margin: 50px 20px 20px 20px;
+    border: solid 2px #333333;
+}
+
+.goal {
+    margin: 20px 30% 0px 30%;
+    color: #f2f0e9;
+    font-size: 26px;
+    background-color: #333333;
+}
+
+.goal-sentence {
+    font-size: 18px;
+    margin: 0px 30% 20px 30%;
+    border-left: solid 2px #333333;
+    border-right: solid 2px #333333;
+    border-bottom: solid 2px #333333;
+}
+
+.profile-board ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-board ul li {
+    list-style: none;
+    box-sizing: border-box;
+    width: 25%;
+}
