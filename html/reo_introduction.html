@@ -3,41 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Introduction</title>
+    
+       
     <link rel="stylesheet" href="../stylesheet/reo_style.css">
+   
 </head>
 <body>
-    <div class = "head-contena">
-        <div class = "introduce">
-            <p class ="introduce_p">Self Introduction</p>
+    <div class = "header_all_container">
+        <div class = "header_name_container">
+            <div class ="header_name">ReoNakasato</div>
+        </div>
+        <div class = "header_about_container" >
+            <div id="scrollLink1"class ="header_about">About</div>
+        </div>
+        <div class = "header_hobby_container">
+            <div id="scrollLink2" class="header_hobby">Hobby</div>
+        </div>
+        <div class = "header_goal_container">
+            <div id="scrollLink3" class="header_goal">Goal</div>
+        </div>
+    </div>
+
+    <div class = "about_all_container">
+        <div id="big_about_btn" class = "big_about">About</div>
+        <img class ="about_img" src="../img/IMG_1686.jpg" alt="自己紹介写真">
+        <div class = "about_name" >中里 玲大</div>
+        <div class ="about_text">ゲームファイルを弄っていたら興味が湧いてきてプログラミングを開始。<br>学習しているうちにWEBサイトの開発に興味が移り<br>WEBプログラマになりたくなった。</div>
+    </div>
+
+    <div class = "hobby_all_container">
+        <div id="big_hobby_btn" class ="big_hobby" >Hobby</div>
+        <img class ="hobby_img" src="../img/hobby-img.png" alt="ゲーム写真">
+        <div class = "hobby_name">ゲーム・TV・映画鑑賞</div>
+        <div class ="hobby_text">
+            ゲームを通じてネット上のさまざまな人と関わるのが好き
+            <br>お笑いが好きなのでバラエティ番組だけを見てる
+            <br>映画はストーリーが凝っているものが好き
+        </div>
+    </div>
+
+    <div class = "goal_all_container">
+        <div id="big_goal_btn" class = "big_goal">Goal</div>
+        <img class ="goal_img" src="../img/rails.png" alt="rails写真">
+        <div class = "goal_name">開発エンジニアとして就職</div>
+        <div class ="goal_text">
+            RUNTEQの恩恵をフル活用してプログラミング技術を磨き
+            <br>1年後には自社開発プログラマとして働きたい
         </div>
     </div>
 
 
+    <script>
+        const scrollLink1 = document.getElementById('scrollLink1');
+        const targetElement1 = document.getElementById('big_about_btn');
+        scrollLink1.addEventListener('click', (event) => {
+            event.preventDefault();
+            targetElement1.scrollIntoView({ behavior: 'smooth' });
+        });
 
-    <div class="introduce_body">
-        <div>
-            <div class="name_containa">
-                <h1 class="name">名前</h1>
-                <h2>中里 玲大</h2>
-            </div>
-            <div class="from_containa">
-                <h1 class="from">出身</h1>
-                <h2>栃木県</h2>
-            </div> 
-            <div class="hobby_containa">
-                <h1 class="hobby">趣味</h1>
-                <h2>ゲーム</h2>
-            </div>
-            <div class="doit_containa">
-                <h1 class="doit">RUNTEQで実現したいこと</h1>
-                <h2>RUNTEQでの9ヶ月を通して<br>自社開発プログラマとしての就職を実現したい!</h2>
-            </div> 
-            <div class="end_containa">
-                <h1 class="end">皆さんどうぞよろしくお願いします！！</h1>
-                
-            </div> 
+        const scrollLink = document.getElementById('scrollLink2');
+        const targetElement = document.getElementById('big_hobby_btn');
+        scrollLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        const scrollLink3 = document.getElementById('scrollLink3');
+        const targetElement3 = document.getElementById('big_goal_btn');
+        scrollLink3.addEventListener('click', (event) => {
+            event.preventDefault();
+            targetElement3.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+    </script>
+    
                       
-    </div>
+
+    
 </body>
-</html>
