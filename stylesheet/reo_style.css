@@ -1,145 +1,210 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
 
 *{
   padding:0;
   margin: 0;  
+  cursor: default;
 }
 
 body{
-    width: 1980px;
-    height: 930px;
-    background-image: url("../img/IMG_1686.jpg");
-    background-color: rgba(137, 219, 240, 0.2);
-    background-size: 1980px;
-    background-repeat: no-repeat;
-}
-@media (max-width: 1200px){
-    body{
-        width: 1200px;
-        height: 930px;
-        background-image: url("../img/IMG_1686.jpg");
-        background-color: rgba(137, 219, 240, 0.2);
-        background-size: 1900px;
-        background-repeat: no-repeat;
-    }
-}
-
-
-.introduce_body{
-    display: inline-block; 
-    height: 800px; 
-    width: 900px;
-    padding-left: 50px;
-    margin-left: 500px;   
-    background-color: rgba(170, 238, 255, 0.5);
-}
-@media (max-width: 1200px){
-    .introduce_body{
-        display: inline-block; 
-        height: 800px; 
-        width: 900px;
-        padding-left: 50px;
-        margin-left: 100px;   
-        background-color: rgba(170, 238, 255, 0.5);
-    }
-}
-
-.introduce{
-    text-align: center;
     width: 100%;
-    height: 10%;
-    background-color: rgba(170, 238, 255, 0.5);
-}
-@media (max-width: 1200px){
-    .introduce{
-        text-align: left;
-        width: 100%;
-        height: 10%;
-        background-color: rgba(170, 238, 255, 0.5);
-    }
+    max-width: 1980px;
+    background-color: rgba(255, 255, 255, 0.2);  
 }
 
-.introduce_p{
-    font-size: 100px;
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;
-}
-.head-contena{
-    width: 1980px;
-    height: 150px;
-    background-color: rgba(137, 219, 240, 0.5);
-}
-@media (max-width: 1200px){
-    .head-contena{
-        width: 1000px;
-        height: 150px;
-        background-color: rgba(137, 219, 240, 0.5);
-    }
-}
-@media (max-width: 1600px){
-    .head-contena{
-        width: 1600px;
-        height: 150px;
-        background-color: rgba(137, 219, 240, 0.5);
-    }
-}
 
-.name{
-    font-size: 50px;
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-    color: rgb(86, 88, 88);
-    border-color: black;
-    border-bottom:  3px solid;
-}
-.from{
-    font-size: 50px;
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-    color: rgb(64, 65, 65);
-    border-color: black;
-    border-bottom:  3px solid;
-}
-.hobby{
-    font-size: 50px;
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-    color: rgb(50, 51, 51);
-    border-color: black;
-    border-bottom:  3px solid;
-}
-.doit{
-    font-size: 50px;
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-    color: rgb(44, 44, 44);
-    border-color: black;
-    border-bottom:  3px solid;
-}
-.end{
-    font-size: 50px;
-    font-family: 'Noto Sans JP', sans-serif;font-weight:900;
-    color: rgba(6, 2, 255, 0.795);
-}
 
-h2{
-    font-size: 40px;
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-    color: rgb(0, 0, 37);
-}
-
-.name_containa{
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-}
-.from_containa{
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-}
-.hobby_containa{
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-}
-.doit_containa{
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-}
-.end_containa{
-    font-family: 'Noto Sans JP', sans-serif;font-weight:700;
-    margin-top:30px ;
+.header_all_container{
     
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1980px;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header_name_container{ 
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.header_about_container{
+    width: 13%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+.header_hobby_container{
+    width: 13%;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+.header_goal_container{
+    width: 13%;
+    padding-right: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.header_name{
+    opacity: 0.9;
+    cursor: default;
+    font-size: 5vw;
+    padding-left: 20%;
+    padding-top: 4%;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgb(0, 0, 0);
+}
+
+.header_about{
+    cursor: default;
+    font-size: 2.5vw;
+    padding-top: 44%;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgb(0, 0, 0);
+}
+.header_about:hover{
+    opacity: 0.8;
+    cursor: default;
+    font-size: 2.6vw;
+    padding-top: 44%;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgb(0, 0, 0);
+}
+.header_hobby{
+    cursor: default;
+    font-size: 2.5vw;
+    padding-top: 44%;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgb(0, 0, 0);
+}
+.header_hobby:hover{
+    opacity: 0.8;
+    cursor: default;
+    font-size: 2.6vw;
+    padding-top: 44%;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgb(0, 0, 0);
+}
+.header_goal{
+    cursor: default;
+    font-size: 2.5vw;
+    padding-top: 44%;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgb(0, 0, 0);
+}
+.header_goal:hover{
+    opacity: 0.8;
+    cursor: default;
+    font-size: 2.6vw;
+    padding-top: 44%;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgb(0, 0, 0);
+}
+
+.about_all_container{
+    display: inline;
+    padding-top: 10%;
+    width: 100%;
+    max-width: 1980px;
+}
+.big_about{
+    padding-top: 13%;
+    padding-bottom: 3%;
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: rgba(0, 0, 0, 0.925);
+}
+.about_img{
+    float: left;
+    width: 45%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.about_name{
+    font-size: 2.5vw;
+    padding-top: 4%;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+}
+.about_text{
+    padding-top: 2%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hobby_all_container{
+    float: left;
+    width: 100%;
+    max-width: 1980px;
+}
+
+.big_hobby{
+    padding-top: 13%;
+    padding-bottom: 3%;
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgba(0, 0, 0, 0.925);
+}
+.hobby_img{
+    float: left;
+    width: 45%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.hobby_name{
+    font-size: 2.5vw;
+    padding-top: 4%;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.hobby_text{
+    padding-top: 2%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.goal_all_container{
+    float: left;
+    width: 100%;
+    max-width: 1980px;
+    height:100%;
+    max-height: 500px;
+}
+
+.big_goal{
+    padding-top: 13%;
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;font-weight:500;
+    color: rgba(0, 0, 0, 0.925);
+}
+
+.goal_img{
+    float: left;
+    width: 45%;
+    padding-bottom: 65px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.goal_name{
+    font-size: 2.5vw;
+    padding-top: 6%;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.goal_text{
+    font-size: 1.5vw;
+    padding-top: 5%;
+    padding-bottom: 65px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
 }
