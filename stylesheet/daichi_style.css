@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+html {
+	font-size: 100%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+body {
+	background-color: #e4fbff;
+	color: #17302e;
+}
+
+
+#container table {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
