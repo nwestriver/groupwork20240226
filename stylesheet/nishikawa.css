@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*container*/
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/*ヘッダー*/
+header {
+  background-color: black;
+  color: white;
+  height: 5vh;
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.header-left {
+  float: left;
+  line-height: 5vh;
+  font-size: 3vh;
+  margin-left: 10px;
+}
+
+.header-right {
+  float: right;
+  line-height: 5vh;
+  font-size: 3vh;
+  margin-right: 10px;
+}
+
+/*フッター*/
+
+/*top-wrapper*/
+.top-wrapper {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url('../img/top_background_image.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-attachment: fixed
+}
+
+/*main-wrapper*/
+.main-wrapper {
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+.prof {
+  text-align: center;
+}
+
+.prof-image {
+  border-radius: 50%;
+  border: 3px solid gray;
+  padding: 2px;
+  height: 250px;
+  width: 250px;
+  background-position: 54% 36%;
+}
+
+
+
+.about-me {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.about-me h1 {
+  text-align: left;
+}
+.experience {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.experience h1 {
+  text-align: left;
+}
+
+.hobby {
+  padding: 20px
+}
+
+.hobby h1 {
+  text-align: left;
+}
+
+.about-me-body {
+  display: flex;
+}
+
+
+
+.experience-body {
+  display: flex;
+}
+
+.hobby-body {
+  display: flex;
+}
+
+.hobby-body-left {
+  text-align: left;
+}
+
+.hobby-game {
+  border-radius: 50%;
+  border: 3px solid gray;
+  padding: 2px;
+  height: 200px;
+  width: 200px;
+  background-position: 54% 36%;
+}
+
+.experience-language {
+  border-radius: 50%;
+  border: 3px solid gray;
+  padding: 2px;
+  height: 150px;
+  width: 150px;
+  background-position: 54% 36%;
+}
+
+.hobby-sport {
+  border-radius: 50%;
+  border: 3px solid gray;
+  padding: 2px;
+  height: 150px;
+  width: 150px;
+  background-position: 54% 36%;
+}
