@@ -1,28 +1,15 @@
 body {
     margin :0px;
-}
-
-.over-wrap {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    flex-direction: row;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #333333;
-}
-
-.left-contents {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    background-color: #e3dccb;
+    font-weight: 500;
+    font-size: 50px;
 }
 
 .page-title {
-    height: 90px;
-    margin: 20px 20px;
-    background-color: #fec463;
-    border: solid 2px #333333;
+    height: 120px;
+    margin: 20px 10px 20px 10px;
+    padding: 8px;
+    color: #f2f0e9;
+    background-color: #333333;
 }
 
 .history-lists {
@@ -39,54 +26,12 @@ body {
     border-left: solid 2px #333333;
 }
 
-.right-contents {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    background-color: #f2f0e9;
-}
-
 .name {
-    height: 90px;
-    margin: 20px 20px;
-    font-size: 50px;
-    text-align: center;
+  margin-top: 40px;
+  height: 120px;
+  font-size: 50px;
+  text-align: center;
 
-}
-
-.icon-container {
-    height: 200px;
-    text-align: center;
-    margin: 20px 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.icon {
-    width: 200px;
-    height:200px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.hidden_icon {
-    width: 200px;
-    height:200px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
-
-.icon:hover {
-    opacity: 0;
-    transition: opacity 1s;
 }
 
 .profile-board {
@@ -95,28 +40,131 @@ body {
     border: solid 2px #333333;
 }
 
-.goal {
+.article {
     margin: 20px 30% 0px 30%;
+    padding: 10px;
     color: #f2f0e9;
-    font-size: 26px;
+    font-size: 24px;
     background-color: #333333;
 }
 
-.goal-sentence {
+.article-sentence {
     font-size: 18px;
     margin: 0px 30% 20px 30%;
+    padding: 10px;
     border-left: solid 2px #333333;
     border-right: solid 2px #333333;
     border-bottom: solid 2px #333333;
 }
-
-.profile-board ul {
-    display: flex;
-    flex-direction: row;
+.profile-container {
+  display: flex;
 }
 
-.profile-board ul li {
-    list-style: none;
-    box-sizing: border-box;
-    width: 25%;
+.detail {
+  width: 50%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-container {
+  height: 200px;
+  margin: 20px 20px;
+}
+
+.detail-img {
+  width: 200px;
+  height:200px;
+  border-radius: 10%;
+}
+
+.img-container-long {
+  height: 300px;
+  margin: 20px 20px;
+}
+
+.detail-img-long {
+  width: 260px;
+  height:320px;
+  border-radius: 10%;
+}
+
+#bg-img-1 {
+  padding-top: 5px;
+  margin: 20px 20px 20px 20px;
+  background-image: url("../img/IMG_0154.JPG");
+  background-position: center;
+  height: 500px;  
+}
+
+/*========= 左固定レイアウトのためのCSS ===============*/
+
+/*左と右を囲う全体のエリア*/
+#wrapper{
+  position: relative;/*position stickyの基点にするため relativeをかける*/
+  display: flex;/*左エリア、右エリア横並び指定*/
+  flex-wrap: wrap;/*ボックスの折り返し可*/
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
+}
+
+/*左エリア*/
+#fixed-area{
+/*左固定記述*/
+  position: -webkit-sticky;/*Safari用*/
+  position: sticky;
+  top:0;
+/*横半分50%　縦を100vhにする*/
+  width: 25%;
+  height: 100vh;
+/*装飾のためのCSS*/
+  display: flex;
+  flex-direction: column;
+  background-color: #e3dccb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*右エリア*/
+#container{
+/*横半分50%にする*/
+  width: 75%;
+  flex-direction: column;
+  background-color: #f2f0e9;
+  justify-content: center;
+  align-items: center;
+}
+/*右各セクション 装飾のためのCSS*/
+section{
+  min-height: 100vh;
+  padding:30px;
+}
+
+section:nth-of-type(2n){
+/*装飾のためのCSS*/
+  background:#eee;
+}
+/*＝＝＝＝＝＝＝＝＝＝＝768px以下の見え方＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+@media screen and (max-width:768px){
+#wrapper{
+  display: block;/*display:flex;を解除*/
+}
+section{
+  min-height:auto;/*縦を100vh⇒解除*/
+}
+
+#fixed-area{
+  position:relative!important;/*position stickyを解除*/
+  width:100%;/*横幅を100%にして1列に見せる*/
+  height: 40vh;/*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
+}
+
+#container{
+  width:100%;/*横幅を100%にして1列に見せる*/
+}
 }
